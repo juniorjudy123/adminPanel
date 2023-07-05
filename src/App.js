@@ -1,41 +1,20 @@
-import Home from "./pages/home/home";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Login from "./pages/login/Login";
-import New from "./pages/new/New";
-import Single from "./pages/single/Single";
-import List from "./pages/list/List";
+// import Home from "./pages/home/home";
+// import { BrowserRouter, Routes, Route } from "react-router-dom"
+// import Login from "./pages/login/Login";
+// import New from "./pages/new/New";
+// import Single from "./pages/single/Single";
+// import List from "./pages/list/List";
+
+import Navbar from "./components/navbar/Navbar";
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-
-          <Route path="/" >
-            <Route index element={<Home />} />
-            <Route path="/login" element={<Login />} />
-
-            <Route path="/users">
-              <Route index element={<List />} />
-              <Route path="new" element={<New />} />
-              <Route path=":userId" element={<Single />} />
-            </Route>
-
-            <Route path="products">
-              <Route index element={<List />} />
-              <Route path="new" element={<New />} />
-              <Route path=":productId" element={<Single />} />
-            </Route>
+      <Navbar />
 
 
 
-          </Route >
-
-
-
-        </Routes >
-      </BrowserRouter>
     </div>
   );
 }
