@@ -10,6 +10,7 @@ export default function Navbar() {
 				<div className="topLeft">
 					<span className="logo">daniboard</span>
 				</div>
+
 				<div className="topRight">
 					<div className="toprightIconContainer">
 						<NotificationsNoneIcon />
@@ -24,6 +25,7 @@ export default function Navbar() {
 					<div className="toprightIconContainer">
 						<SettingsIcon />
 					</div>
+
 					<img
 						src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=400"
 						alt="profileimg"
